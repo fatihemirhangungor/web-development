@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #80A3FF;
+}
+
+img{
+  width: 295px;
+  height: 350px;
+}
+
+h1 {
+  margin-top: 0;
+  font-family: 'DM Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+p{
+  font-family: 'DM Sans', sans-serif;
+  color: #FFFFFF;
+}
+
+.top-container {
+  margin-top: 20px;
+}
