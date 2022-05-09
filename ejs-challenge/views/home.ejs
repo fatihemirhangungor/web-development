@@ -3,8 +3,12 @@
 <h1>Home</h1>
 <p><%= homeStartingContentEJS %></p>
 
-<% for(let i = 0; i < postsEJS.length; i++) { %>
-    <% console.log(postsEJS[i]) %> 
-<% } %>
+<% postsEJS.forEach(function (post) { %>
+    <h1> <%= post.title %> </h1>
+    <p> 
+        <%= post.body.substring(0, 100) + " ..." %>
+        <a href="/posts/ <%= post.title %> " >Read More</a>
+    </p>
+<% }) %> 
 
 <%- include("partials/footer") -%>
